@@ -1,4 +1,4 @@
-FROM rocker/r-ver:3.6.0
+FROM rocker/rstudio
       
 # update some packages, including sodium and apache2, then clean
 RUN apt-get update \
