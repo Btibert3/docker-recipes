@@ -13,8 +13,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         libfreetype6-dev \
         libzmq3-dev \
         pkg-config \
-        python \
-        python-dev \
+        python3 \
+        python3-pip \
         rsync \
         software-properties-common \
         unzip \
@@ -22,11 +22,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN curl -O https://bootstrap.pypa.io/get-pip.py && \
-    python get-pip.py && \
-    rm get-pip.py
-
-RUN pip --no-cache-dir install \
+RUN pip3 --no-cache-dir install \
         ipykernel \
         jupyter \
         matplotlib \
