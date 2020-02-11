@@ -45,3 +45,7 @@ RUN /opt/conda/bin/pip install --no-cache-dir tensorflow==2.0.0 h5py==2.10.0
 # let R know the right version of python to use
 ENV RETICULATE_PYTHON /opt/conda/bin/python
 
+# other R installs
+COPY install.R /
+RUN Rscript install.R && rm install.R
+
