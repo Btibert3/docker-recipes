@@ -1,3 +1,7 @@
+Install from:
+https://github.com/tmobile/r-tensorflow-api
+https://github.com/tmobile/r-tensorflow-api.git
+
 Inspired from:
 
 https://github.com/earthlab/dockerfiles/blob/master/r-tensorflow/Dockerfile
