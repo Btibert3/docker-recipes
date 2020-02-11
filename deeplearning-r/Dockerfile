@@ -40,7 +40,7 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-4.6.14-Linux-x86
 ENV PATH /opt/conda/bin:$PATH
 
 # install tf
-RUN /opt/conda/bin/pip install --no-cache-dir tensorflow==2.0.0 h5py==2.10.0
+RUN /opt/conda/bin/pip install --no-cache-dir tensorflow==2.0.0 h5py==2.10.0 jupyterlab pandas scikit-learn seaborn
 
 # let R know the right version of python to use
 ENV RETICULATE_PYTHON /opt/conda/bin/python
