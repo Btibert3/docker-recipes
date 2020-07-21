@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   neo4j:
-    image: neo4j:4.0.6-enterprise
+    image: neo4j:4.1.0
     container_name: "neo4j"
     volumes:
       - ./plugins:/plugins
@@ -20,3 +20,4 @@ services:
       - NEO4J_apoc_export_file_enabled=true
       - NEO4JLABS_PLUGINS=["apoc","graph-data-science"]
       - NEO4J_dbms_connector_bolt_advertised__address=167.99.154.126:7687
+      
